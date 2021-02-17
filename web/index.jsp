@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body class="d-flex justify-content-center p-5 pv-body">
-        <form class="needs-validation" novalidate>
+        <form action="session" method="post">
             <div class="text-center">
                 <img src="./images/banner-prev.png" alt="prevcrim" clas="img-fluid">
             </div>
@@ -31,57 +31,33 @@
             </div>
             <hr>
             <div class="d-grid gap-2">
-                <button type="button" class="btn btn-outline-dark btn-sm" id="inicio_session" onclick="InicioSesion();">Iniciar Sesi&oacute;n</button> 
+                <!--<button type="button" class="btn btn-dark btn-sm" id="inicio_session" onclick="InicioSesion();">Iniciar Sesi&oacute;n</button>-->
+                <button type="submit" class="btn btn-dark btn-sm" name="initSesion" id="initSesion">Iniciar Sesi&oacute;n</button>
             </div>
         </form>
 
         <script src="./resources/jQuery/jquery.js"></script>
         <script src="./resources/bootstrap-v5/js/bootstrap.bundle.js"></script>
         <script type="text/javascript">
-            
-//            let startSession = document.getElementById('inicio_session');
-//            
-//            startSession.addEventListener('click', ()=> {
-//                let inpUsuario = document.getElementById('inpUsuario').value.trim();
+//                    function InicioSesion() {
+//                        let inpUsuario = document.getElementById('inpUsuario').value.trim();
 //                        let inpClave = document.getElementById('inpClave').value.trim();
 //                        let info = document.getElementById('info');
 //
 //                        if (inpUsuario == "") {
-////                            alert("!!Favor de ingresar usuario");
-//                            info.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
-//                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-//                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-//            </div>`
+//                            info.innerHTML = `<div class="alert alert-danger alert-dismissible fade show p-1" role="alert">
+//                                <strong style="font-size: 0.9rem; font-weight:500;">!!Favor de ingresar usuario</strong>.
+//                                <button type="button" class="btn-close p-2" data-bs-dismiss="alert" aria-label="Close"></button>
+//                            </div>`;
 //                            return false;
 //                        }
 //
 //                        if (inpClave == "") {
-//                            alert("!!Favor de ingresar Contraseña");
+//                            alert("!!Favor de ingresar contraseña");
 //                            return false;
 //                        }
-//            });
-
-                    function InicioSesion() {
-//                console.info($('#inpUsuario').val());
-                        let inpUsuario = document.getElementById('inpUsuario').value.trim();
-                        let inpClave = document.getElementById('inpClave').value.trim();
-                        let info = document.getElementById('info');
-
-                        if (inpUsuario == "") {
-//                            alert("!!Favor de ingresar usuario");
-                            info.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>`
-                            return false;
-                        }
-
-                        if (inpClave == "") {
-                            alert("!!Favor de ingresar Contraseña");
-                            return false;
-                        }
-
-                    }
+//
+//                    }
 
         </script>
     </body>
