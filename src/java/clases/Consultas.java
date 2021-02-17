@@ -1,4 +1,4 @@
-package Prevcrim.modelo;
+package clases;
 
 import java.sql.SQLException;
 
