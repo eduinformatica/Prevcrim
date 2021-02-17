@@ -1,4 +1,4 @@
-package Prevcrim.modelo;
+package settings;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
